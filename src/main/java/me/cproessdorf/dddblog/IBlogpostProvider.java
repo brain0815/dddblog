@@ -7,7 +7,13 @@ import java.util.List;
 public interface IBlogpostProvider {
 
     @Bean
-    IBlogpost giveMeABlogpost();
+    Blogpost giveMeABlogpostById(Long id);
     @Bean
     List giveMeAllBlogposts();
+    @Bean
+    Boolean saveMyBlogpost(Blogpost blogpost);
+    @Bean
+    Boolean updateMyBlogpost(Blogpost blogpost);
+    @Bean
+    Boolean deleteABlogpostById(Long id);
 }

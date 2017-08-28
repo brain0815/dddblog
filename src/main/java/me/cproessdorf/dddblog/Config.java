@@ -7,7 +7,7 @@ import org.springframework.context.annotation.*;
 public class Config {
 
     @Bean
-    BlogpostProvider IBlogpostProvider () {
+    BlogpostProvider BlogpostProvider () {
         return new BlogpostProvider();
     }
 

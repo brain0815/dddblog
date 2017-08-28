@@ -8,16 +8,9 @@ import org.springframework.context.annotation.Configuration;
 public class Testconfig {
 
     @Bean
-    IBlogpost provideMe(){
-        IBlogpost x = mock(IBlogpost.class);
-        when(x.getContent()).thenReturn("Hello World as content");
-        return x;
-    }
-
-    @Bean
-    IBlogpostProvider blogpostTestProvider(IBlogpost y){
-        IBlogpostProvider x = mock(IBlogpostProvider.class);
-        when(x.giveMeABlogpost()).thenReturn(y);
+    BlogpostProvider blogpostTestProvider(IBlogpost y){
+        BlogpostProvider x = mock(IBlogpostProvider.class);
+        when(x.giveMeABlogpostById((long) 1)).thenReturn(y);
         return x;
     }
 
