@@ -1,5 +1,7 @@
 package me.cproessdorf.dddblog;
 
+import me.cproessdorf.dddblog.blogpost.provider.BlogpostProvider;
+import me.cproessdorf.dddblog.blogpost.repository.BlogpostRepository;
 import org.springframework.context.annotation.*;
 
 @Configuration
@@ -10,5 +12,8 @@ public class Config {
     BlogpostProvider BlogpostProvider () {
         return new BlogpostProvider();
     }
-
+    @Bean
+    BlogpostRepository BlogpostRepository () {
+        return new BlogpostRepository();
+    }
 }

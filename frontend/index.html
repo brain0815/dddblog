@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>Clean Blog - Start Bootstrap Theme</title>
+		<!-- Bootstrap core CSS -->
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Custom fonts for this template -->
+		<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/clean-blog.css">
+	</head>
+	<body style="padding-top: 10px;">
+		
+		<div class="container">
+			<div ng-include="'views/partials/navigationbar.html'"></div>
+			<div ng-include="'views/partials/pageheader.html'"></div>
+			<div ng-view></div>
+			<div ng-include="'views/partials/pagefooter.html'"></div>
+		</div>
+
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/angular.js"></script>
+		<script src="js/angular-route.js"></script>
+		<script src="app/app.js"></script>
+		<script src="app/controllers.js"></script>
+		<script src="app/directives.js"></script>
+	</body>
+</html>
