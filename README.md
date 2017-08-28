@@ -29,4 +29,4 @@ needs following Apache2 config to run properly:
 
 ## Backend:
 
-Build with maven and start jar in target
+Build with maven and start jar in src/target
